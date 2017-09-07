@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean type="com.servidoctor.seguridad.controller.LoginForm" name="loginForm" />
+		<form-bean type="com.servidoctor.seguridad.controller.SingUpForm" name="singUpForm" />
+		<form-bean type="com.servidoctor.parametros.controller.LogosMayorForm" name="logosMayorForm" />
+		<form-bean type="com.servidoctor.parametros.controller.ArtesMayorForm" name="artesMayorForm" />
+		<form-bean type="com.servidoctor.parametros.controller.UsuarioFamilyForm" name="usuarioFamilyForm" />
+		<form-bean type="com.servidoctor.parametros.controller.OptometriaForm" name="optometriaForm" />
+		<form-bean type="com.servidoctor.parametros.controller.VacunasCuidadosForm" name="vacunasCuidadosForm" />
+		<form-bean type="com.servidoctor.parametros.controller.GastosVehiculosForm" name="gastosVehiculosForm" />
+		<form-bean type="com.servidoctor.parametros.controller.RevisionesVehiculoForm" name="revisionesVehiculoForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.DatosPersonalesForm" name="datosPersonalesForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.DisclaimerForm" name="disclaimerForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.CasoEmergenciaForm" name="casoEmergenciaForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.SeguroMedicoForm" name="seguroMedicoForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.HistoriaMedicaForm" name="historiaMedicaForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.AlergiasUsuarioForm" name="alergiasUsuarioForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.CirujiasUsuarioForm" name="cirujiasUsuarioForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.AntecedentesUsuarioForm" name="antecedentesUsuarioForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.UsuarioEnfermedadesForm" name="usuarioEnfermedadesForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.OptometriaCompletoForm" name="optometriaCompletoForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.OdontologiaCompletoForm" name="odontologiaCompletoForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.OdontologiaUsuarioForm" name="odontologiaUsuarioForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.MedicinaCompletoForm" name="medicinaCompletoForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.ExamenesUsuarioForm" name="examenesUsuarioForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.ControlOdontologiaForm" name="controlOdontologiaForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.MedicamentosForm" name="medicamentosForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.ControlVacunasForm" name="controlVacunasForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.VacunasUsuarioForm" name="vacunasUsuarioForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.ControlMedicoForm" name="controlMedicoForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.ControlOtroPeriodicoForm" name="controlOtroPeriodicoForm" />
+		<form-bean type="com.servidoctor.sdfamily.controller.ControlOtroConcitaForm" name="controlOtroConcitaForm" />
+		<form-bean type="com.servidoctor.sdpets.controller.MascotaMedicamentosForm" name="mascotaMedicamentosForm" />
+		<form-bean type="com.servidoctor.sdpets.controller.MascotaCompletoForm" name="mascotaCompletoForm" />
+		<form-bean type="com.servidoctor.sdpets.controller.ControlCuidadosForm" name="controlCuidadosForm" />
+		<form-bean type="com.servidoctor.sdpets.controller.SeguroPetsForm" name="seguroPetsForm" />
+		<form-bean type="com.servidoctor.sdpets.controller.EnfermedadesPetsForm" name="EnfermedadesPetsForm" />
+		<form-bean type="com.servidoctor.sdpets.controller.AlergiasPetsForm" name="AlergiasPetsForm" />
+		<form-bean type="com.servidoctor.sdpets.controller.CirugiasPetsForm" name="CirugiasPetsForm" />
+		<form-bean type="com.servidoctor.sdcars.controller.VehiculosCompletoForm" name="vehiculosCompletoForm" />
+		<form-bean type="com.servidoctor.sdcars.controller.SegurosVehiculosForm" name="segurosVehiculosForm" />	
+		<form-bean type="com.servidoctor.sdcars.controller.ControlesVehiculosForm" name="controlesVehiculosForm" />
+		<form-bean type="com.servidoctor.sdcars.controller.ImpuestoVehiculoForm" name="impuestoVehiculoForm" />
+		<form-bean type="com.servidoctor.sdcars.controller.CombustibleForm" name="combustibleForm" />
+		<form-bean type="com.servidoctor.parametros.controller.UsuarioPetsForm" name="usuarioPetsForm" />	
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+	<forward name="failure" path="error.page"/>
+    <forward name="success" path="/success.jsp"/>
+    <forward name="error" path="error.page"/>
+    <forward name="cancel" path="/servlet/main.do"/>
+    <forward name="login" path="/logout.jsp"/>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+  
+        <!-- para usar AJAX -->
+        
+        <action path="/actualizarCiudades" type="com.servidoctor.ajax.controller.CiudadesAction" scope="request">
+          <forward name="success" path="/ajax/ciudadesResponse.jsp" />
+        </action>
+        
+        <!-- fin para usar AJAX -->
+  
+		<action path="/main" parameter="forward" type="com.servidoctor.seguridad.controller.DispatchForward">
+			<forward name="forward" path="doc.mainLayout" />
+		</action>
+		<action path="/CrearLogin"  parameter="ACTIVATE" type="com.servidoctor.seguridad.controller.SingUpAction" scope="request" name="singUpForm" validate="false" >
+			<forward name="success_family" path="/login.jsp" />
+			<forward name="success_pets"  path="/login.jsp" />
+			<forward name="success_car"  path="/login.jsp" />
+			<forward name="success"  path="/activar.jsp" />
+			<forward name="failure"  path="/activar.jsp" />
+		</action>
+        <action path="/reloadCrearLoginData" parameter="RELOAD_ACTIVATE" type="com.servidoctor.seguridad.controller.SingUpAction" scope="request" name="singUpForm" validate="false">
+            <forward name="success_family" redirect="false" path="/login.jsp" />
+            <forward name="success_pets" redirect="false" path="/login.jsp" />
+            <forward name="success_car" redirect="false" path="/login.jsp" />
+            <forward name="failure" redirect="false" path="/activar.jsp" />
+        </action>
+
+		<action path="/login" parameter="LOGIN" type="com.servidoctor.seguridad.controller.LogoutAction" scope="request" name="loginForm" validate="false">
+			<forward name="success_family" path="/template/layoutFamily.jsp" />
+			<forward name="success_pets" path="/template/layoutPets.jsp" />
+			<forward name="success_car" path="/template/layoutCar.jsp" />
+			<forward name="success" path="/login.jsp" />
+			<forward name="failure" path="/login.jsp" />
+		</action>
+        <action path="/reloadLoginData" parameter="RELOAD_LOGIN_DATA" type="com.servidoctor.seguridad.controller.LogoutAction" scope="request" name="loginForm" validate="false">
+            <forward name="success_family" redirect="false" path="/template/layoutFamily.jsp" />
+            <forward name="success_pets" redirect="false" path="/template/layoutPets.jsp" />
+            <forward name="success_car" redirect="false" path="/template/layoutCar.jsp" />
+            <forward name="failure" redirect="false" path="/login.jsp" />
+        </action>
+		<action path="/Idioma" parameter="IDIOMA" type="com.servidoctor.seguridad.controller.LogoutAction" scope="request" name="loginForm" validate="false">
+			<forward name="login" path="/login.jsp" />
+			<forward name="activar" path="/activar.jsp" />
+			<forward name="cambiar" path="/passchange.jsp" />
+			<forward name="failure" path="/login.jsp" />
+		</action>
+		<action path="/Family" forward="/template/layoutFamily.htm" />
+		<action path="/Pets" forward="/template/layoutPets.htm" />
+		<action path="/Car" forward="/template/layoutCar.htm" />
+		<action path="/logout" parameter="LOGOUT" type="com.servidoctor.seguridad.controller.LogoutAction">
+			<forward name="success" path="/login.jsp" />
+		</action>
+		<action path="/passrem" parameter="PASSREM" type="com.servidoctor.seguridad.controller.LogoutAction" scope="request" name="loginForm" validate="false"> 
+            <forward name="success" path="/login.jsp" />
+            <forward name="failure" path="/login.jsp" />            
+        </action>
+        <action path="/passChange" parameter="PASSCHANGE" type="com.servidoctor.seguridad.controller.LogoutAction" scope="request" name="loginForm" validate="false">
+            <forward name="success" redirect="false" path="/login.jsp" /> 
+            <forward name="failure" redirect="false" path="/passchange.jsp" /> 
+        </action>
+		
+		<action path="/PanelMayor/report" type="com.servidoctor.reportes.controller.ReportePanelMayorAction"/>
+		<action path="/Family/report" parameter="REPORT" type="com.servidoctor.sdfamily.controller.ReportesAction" scope="request" name="datosPersonalesForm" validate="false">
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>
+		<action path="/DatosPer/add" parameter="ADD" type="com.servidoctor.sdfamily.controller.DatosPersonalesAction" scope="session" name="datosPersonalesForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.add" />
+		</action>
+		<action path="/DatosPer/remove" parameter="REMOVE" type="com.servidoctor.sdfamily.controller.DatosPersonalesAction" scope="request" name="datosPersonalesForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.exito" />
+		</action>
+		<action path="/DatosPer/edit" parameter="EDIT" type="com.servidoctor.sdfamily.controller.DatosPersonalesAction" scope="request" name="datosPersonalesForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.add" />
+		</action>
+		<action path="/DatosPer/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.DatosPersonalesAction" scope="session" name="datosPersonalesForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.add" />
+		</action>
+		<action path="/DatosPer/save" parameter="SAVE" type="com.servidoctor.sdfamily.controller.DatosPersonalesAction" scope="session" name="datosPersonalesForm" validate="false" >
+			<forward name="success" redirect="false" path="/DatosPer/add.do" />
+		</action>
+		<action path="/DatosPer/Popup/disclaimer" parameter="DISCLAIMER" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="disclaimerForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.disclaimer" />
+		</action>
+		<action path="/DatosPer/Popup/transferir_disclaimer" parameter="TRASF_DISCLAIMER" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="disclaimerForm" validate="false">
+			<forward name="success" path="/DatosPer/add.do" />
+		</action>
+		<action path="/DatosPer/Popup/add_cont" parameter="ADD_CONTACTO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="casoEmergenciaForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.popup_con_add" />
+		</action>
+		<action path="/DatosPer/Popup/remove_cont" parameter="REMOVE_CONTACTO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="casoEmergenciaForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosPer/add.do" />
+		</action>
+		<action path="/DatosPer/Popup/transferir_cont" parameter="TRASF_CONTACTO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="casoEmergenciaForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosPer/add.do" />
+		</action>
+		<action path="/DatosPer/Popup/edit_cont" parameter="EDIT_CONTACTO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="casoEmergenciaForm" validate="false">
+			<forward name="success" redirect="false" path="sdfamily.datosPerso.popup_con_edit" />
+		</action>
+		<action path="/DatosPer/Popup/add_seguro" parameter="ADD_SEGURO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="seguroMedicoForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.popup_seguro_add" />
+		</action>
+		<action path="/DatosPer/Popup/remove_seguro" parameter="REMOVE_SEGURO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="seguroMedicoForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosPer/add.do" />
+		</action>
+		<action path="/DatosPer/Popup/transferir_seguro" parameter="TRASF_SEGURO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="seguroMedicoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosPer/add.do" />
+		</action>
+		<action path="/DatosPer/Popup/edit_seguro" parameter="EDIT_SEGURO" type="com.servidoctor.sdfamily.controller.PopupDatosPersoAction" scope="request" name="seguroMedicoForm" validate="false">
+			<forward name="success" path="sdfamily.datosPerso.popup_seguro_edit" />
+		</action>
+		<!-- FIN Datos Personales-->
+		
+		<!--Aspecto General -->
+		<action path="/AspectosGenerales/aspectos_generales" forward="sdfamily.aspectosGenerales.aspectos_generales" />
+		
+		<!--Otros Controles Family-->
+		<!--Principal-->
+		<action path="/Control_Otro/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.ControlOtroAction" scope="session" name="controlOtroPeriodicoForm" validate="false">
+			<forward name="success" path="sdfamily.controlOtro.view" />
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>
+		<action path="/Control_Otro/add" parameter="ADD" type="com.servidoctor.sdfamily.controller.ControlOtroAction" scope="session" name="controlOtroPeriodicoForm" validate="false">
+			<forward name="success" path="sdfamily.controlOtro.add" />
+		</action>
+		<action path="/Control_Otro/save" parameter="SAVE" type="com.servidoctor.sdfamily.controller.ControlOtroAction" scope="request" name="controlOtroPeriodicoForm" validate="false">
+			<forward name="success" redirect="true" path="sdfamily.controlOtro.view" />
+		</action>
+
+		<!--Popup-->
+
+		<action path="/Control_Otro/Popup/edit_control" parameter="EDIT_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroAction" scope="request" name="controlOtroPeriodicoForm" validate="false">
+			<forward name="success" path="sdfamily.controlOtro.popup_control_edit" />
+		</action>
+		<action path="/Control_Otro/Popup/add_control" parameter="ADD_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroAction" scope="request" name="controlOtroPeriodicoForm" validate="false">
+			<forward name="success" path="sdfamily.controlOtro.popup_control_add" />
+		</action>
+		<action path="/Control_Otro/Popup/remove_control" parameter="REMOVE_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroAction" scope="request" name="controlOtroPeriodicoForm" validate="false">
+			<forward name="success" redirect="true" path="sdfamily.controlOtro.add" />
+		</action>
+		<action path="/Control_Otro/Popup/transferir_control" parameter="TRANSFER_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroAction" scope="request" name="controlOtroPeriodicoForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Otro/add.do" />
+		</action>
+		<!-- popup controlotroconcita -->
+		<action path="/Control_Otro/Popup/edit_controlconcita" parameter="EDIT_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroConcitaAction" scope="request" name="controlOtroConcitaForm" validate="false">
+			<forward name="success" path="sdfamily.controlOtro.popup_controlconcita_edit" />
+		</action>
+		<action path="/Control_Otro/Popup/add_controlconcita" parameter="ADD_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroConcitaAction" scope="request" name="controlOtroConcitaForm" validate="false">
+			<forward name="success" path="sdfamily.controlOtro.popup_controlconcita_add" />
+		</action>
+		<action path="/Control_Otro/Popup/remove_controlconcita" parameter="REMOVE_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroConcitaAction" scope="request" name="controlOtroConcitaForm" validate="false">
+			<forward name="success" redirect="true" path="sdfamily.controlOtro.add" />
+		</action>
+		<action path="/Control_Otro/Popup/transferir_controlconcita" parameter="TRANSFER_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlOtroConcitaAction" scope="request" name="controlOtroConcitaForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Otro/add.do" />
+		</action>
+		
+		
+		<!-- Carne -->
+		<action path="/Carne/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.CarneAction" scope="request" name="usuarioFamilyForm" validate="false">
+			<forward name="success" redirect="false" path="sdfamily.carne.view" />
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>
+		<action path="/Carne/generar" parameter="GENERATE" type="com.servidoctor.sdfamily.controller.CarneAction" scope="request" name="usuarioFamilyForm" validate="false">
+			<forward name="success" redirect="false" path="/Carne/view.do" />
+		</action>	
+		<action path="/Carne/Popup/preview" parameter="PREVIEW" type="com.servidoctor.sdfamily.controller.CarneAction" scope="request" name="usuarioFamilyForm" validate="false">
+			<forward name="success" redirect="false" path="sdfamily.carne.preview" />
+		</action>		
+		
+		<!-- Fin Carne -->
+				
+				
+		
+				
+		<!-- INICIO Historia Medica-->
+		<action path="/Histo_Medica/add" parameter="ADD" type="com.servidoctor.sdfamily.controller.HistoriaMedicaAction" scope="session" name="historiaMedicaForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.add" />
+		</action>
+		<action path="/Histo_Medica/save" parameter="SAVE" type="com.servidoctor.sdfamily.controller.HistoriaMedicaAction" scope="request" name="historiaMedicaForm" validate="false">
+			<forward name="success" redirect="false" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.HistoriaMedicaAction" scope="session" name="historiaMedicaForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.add" />
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/add_enfermedad" parameter="ADD_ENF" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="usuarioEnfermedadesForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.add_enf" />
+		</action>
+		<action path="/Histo_Medica/Popup/edit_enfermedad" parameter="EDIT_ENF" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="usuarioEnfermedadesForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.edit_enf" />
+		</action>
+		<action path="/Histo_Medica/Popup/remove_enfermedad" parameter="REMOVE_ENF" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="usuarioEnfermedadesForm" validate="false">
+			<forward name="success" redirect="true" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/transferir_enfermedad" parameter="TRANSFER_ENF" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="usuarioEnfermedadesForm" validate="false">
+			<forward name="success" redirect="false" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/add_alergia" parameter="ADD_ALERGIA" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="alergiasUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.add_alerg" />
+		</action>
+		<action path="/Histo_Medica/Popup/edit_alergia" parameter="EDIT_ALERGIA" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="alergiasUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.edit_alerg" />
+		</action>
+		<action path="/Histo_Medica/Popup/remove_alergia" parameter="REMOVE_ALERGIA" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="alergiasUsuarioForm" validate="false">
+			<forward name="success" redirect="true" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/transferir_alergia" parameter="TRANSFER_ALERGIA" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="alergiasUsuarioForm" validate="false">
+			<forward name="success" redirect="false" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/add_cirujia" parameter="ADD_CIR" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="cirujiasUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.add_cir" />
+		</action>
+		<action path="/Histo_Medica/Popup/edit_cirujia" parameter="EDIT_CIR" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="cirujiasUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.edit_cir" />
+		</action>
+		<action path="/Histo_Medica/Popup/remove_cirujia" parameter="REMOVE_CIR" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="cirujiasUsuarioForm" validate="false">
+			<forward name="success" redirect="true" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/transferir_cirujia" parameter="TRANSFER_CIR" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="cirujiasUsuarioForm" validate="false">
+			<forward name="success" redirect="false" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/add_medicamento" parameter="ADD_MED" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="medicamentosForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.add_medto" />
+		</action>
+		<action path="/Histo_Medica/Popup/edit_medicamento" parameter="EDIT_MED" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="medicamentosForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.edit_medto" />
+		</action>
+		<action path="/Histo_Medica/Popup/remove_medicamento" parameter="REMOVE_MED" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="medicamentosForm" validate="false">
+			<forward name="success" redirect="true" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/transferir_medicamento" parameter="TRANSFER_MED" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="medicamentosForm" validate="false">
+			<forward name="success" redirect="false" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Histo_Medica/Popup/add_antecedente" parameter="ADD_ANTE" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="antecedentesUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.historiaMedica.popup.add_ante" />
+		</action>
+		<action path="/Histo_Medica/Popup/transferir_antecedente" parameter="TRANSFER_ANTE" type="com.servidoctor.sdfamily.controller.PopupHistoriaMedicaAction" scope="request" name="antecedentesUsuarioForm" validate="false">
+			<forward name="success" redirect="false" path="/Histo_Medica/add.do" />
+		</action>
+		<action path="/Control_opto/add" parameter="ADD" type="com.servidoctor.sdfamily.controller.OptometriaCompletoAction" scope="session" name="optometriaCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="sdfamily.controlOpto.add" />
+		</action>
+		<action path="/Control_opto/save" parameter="SAVE" type="com.servidoctor.sdfamily.controller.OptometriaCompletoAction" scope="request" name="optometriaCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_opto/add.do" />
+		</action>
+		<action path="/Control_opto/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.OptometriaCompletoAction" scope="session" name="optometriaCompletoForm" validate="false">
+			<forward name="success" path="sdfamily.controlOpto.add" />
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>
+		<action path="/Control_opto/Popup/edit_tabla" parameter="EDIT_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOptomAction" scope="request" name="optometriaForm" validate="false">
+			<forward name="success" path="sdfamily.controlOpto.popup_tabla_edit" />
+		</action>
+		<action path="/Control_opto/Popup/transferir_tabla" parameter="TRANSFER_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOptomAction" scope="request" name="optometriaForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_opto/add.do" />
+		</action>
+		<action path="/Control_opto/Popup/add_tabla" parameter="ADD_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOptomAction" scope="request" name="optometriaForm" validate="false">
+			<forward name="success" path="sdfamily.controlOpto.popup_tabla_add" />
+		</action>
+		<action path="/Control_opto/Popup/remove_tabla" parameter="REMOVE_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOptomAction" scope="request" name="optometriaForm" validate="false">
+			<forward name="success" redirect="true" path="/Control_opto/add.do" />
+		</action>
+		<action path="/Control_Odont/add" parameter="ADD" type="com.servidoctor.sdfamily.controller.OdontologiaCompletoAction" scope="session" name="odontologiaCompletoForm" validate="false">
+			<forward name="success" path="sdfamily.controlOdonto.add" />
+		</action>
+		<action path="/Control_Odont/save" parameter="SAVE" type="com.servidoctor.sdfamily.controller.OdontologiaCompletoAction" scope="request" name="odontologiaCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Odont/view.do" />
+		</action>
+		<action path="/Control_Odont/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.OdontologiaCompletoAction" scope="session" name="odontologiaCompletoForm" validate="false">
+			<forward name="success" path="sdfamily.controlOdonto.add" />
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>		
+		<action path="/Control_Odont/Popup/edit_tabla" parameter="EDIT_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="odontologiaUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.controlOdonto.popup_tabla_edit" />
+		</action>
+		<action path="/Control_Odont/Popup/add_tabla" parameter="ADD_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="odontologiaUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.controlOdonto.popup_tabla_add" />
+		</action>
+		<action path="/Control_Odont/Popup/remove_tabla" parameter="REMOVE_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="odontologiaUsuarioForm" validate="false">
+			<forward name="success" redirect="true" path="/Control_Odont/add.do" />
+		</action>
+		<action path="/Control_Odont/Popup/transferir_tabla" parameter="TRANSFER_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="odontologiaUsuarioForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Odont/add.do" />
+		</action>
+		<action path="/Control_Odont/Popup/edit_controlU" parameter="EDIT_CONTROLU" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="controlOdontologiaForm" validate="false">
+			<forward name="success" path="sdfamily.controlOdonto.popup_controlu_edit" />
+		</action>
+		<action path="/Control_Odont/Popup/transferir_controlU" parameter="TRANSFER_CONTROLU" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="controlOdontologiaForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Odont/add.do" />
+		</action>
+		<action path="/Control_Odont/Popup/edit_controlP" parameter="EDIT_CONTROLP" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="controlOdontologiaForm" validate="false">
+			<forward name="success" path="sdfamily.controlOdonto.popup_controlp_edit" />
+		</action>
+		<action path="/Control_Odont/Popup/transferir_controlP" parameter="TRANSFER_CONTROLP" type="com.servidoctor.sdfamily.controller.PopupControlesOdontAction" scope="request" name="controlOdontologiaForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Odont/add.do" />
+		</action>
+		
+		<action path="/Control_Medico/add" parameter="ADD" type="com.servidoctor.sdfamily.controller.MedicinaCompletoAction" scope="session" name="medicinaCompletoForm" validate="false">
+			<forward name="success" path="sdfamily.controlMedico.add" />
+		</action>
+		<action path="/Control_Medico/save" parameter="SAVE" type="com.servidoctor.sdfamily.controller.MedicinaCompletoAction" scope="request" name="medicinaCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Medico/view.do" />
+
+		</action>
+		<action path="/Control_Medico/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.MedicinaCompletoAction" scope="session" name="medicinaCompletoForm" validate="false">
+			<forward name="success" path="sdfamily.controlMedico.add" />
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>
+		<action path="/Control_Medico/Popup/edit_tabla" parameter="EDIT_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="examenesUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.control_medico.popup_tabla_edit" />
+		</action>
+		<action path="/Control_Medico/Popup/add_tabla" parameter="ADD_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="examenesUsuarioForm" validate="false">
+			<forward name="success" path="sdfamily.control_medico.popup_tabla_add" />
+		</action>
+		<action path="/Control_Medico/Popup/remove_tabla" parameter="REMOVE_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="examenesUsuarioForm" validate="false">
+			<forward name="success" redirect="true" path="/Control_Medico/add.do" />
+		</action>
+		<action path="/Control_Medico/Popup/transferir_tabla" parameter="TRANSFER_TABLA" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="examenesUsuarioForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Medico/add.do" />
+		</action>
+		<action path="/Control_Medico/Popup/edit_controlU" parameter="EDIT_CONTROLU" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="controlMedicoForm" validate="false">
+			<forward name="success" path="sdfamily.control_medico.popup_controlu_edit" />
+		</action>
+		<action path="/Control_Medico/Popup/transferir_controlU" parameter="TRANSFER_CONTROLU" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="controlMedicoForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Medico/add.do" />
+		</action>
+		<action path="/Control_Medico/Popup/edit_controlP" parameter="EDIT_CONTROLP" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="controlMedicoForm" validate="false">
+			<forward name="success" path="sdfamily.control_medico.popup_controlp_edit" />
+		</action>
+		<action path="/Control_Medico/Popup/transferir_controlP" parameter="TRANSFER_CONTROLP" type="com.servidoctor.sdfamily.controller.PopupControlMedicoAction" scope="request" name="controlMedicoForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Medico/add.do" />
+		</action>
+		
+		<action path="/Control_Vacunas/add" parameter="ADD" type="com.servidoctor.sdfamily.controller.ControlVacunasAction" scope="session" name="controlVacunasForm" validate="false">
+			<forward name="success" path="sdfamily.controlVacunas.add" />
+		</action>
+		<action path="/Control_Vacunas/save" parameter="SAVE" type="com.servidoctor.sdfamily.controller.ControlVacunasAction" scope="request" name="controlVacunasForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Vacunas/view.do" />
+		</action>
+		<action path="/Control_Vacunas/view" parameter="VIEW" type="com.servidoctor.sdfamily.controller.ControlVacunasAction" scope="session" name="controlVacunasForm" validate="false">
+			<forward name="success" path="sdfamily.controlVacunas.add" />
+			<forward name="datospersonales" path="/DatosPer/view.do" />
+		</action>
+		<action path="/Control_Vacunas/Popup/remove_vacuna" parameter="REMOVE_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlVacunasAction" scope="request" name="vacunasUsuarioForm" validate="false">
+			<forward name="success" redirect="true" path="/Control_Vacunas/add.do" />
+		</action>		
+		<action path="/Control_Vacunas/Popup/transferir_vacuna" parameter="TRANSFER_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlVacunasAction" scope="request" name="vacunasUsuarioForm" validate="false">
+			<forward name="success" redirect="false" path="/Control_Vacunas/add.do" />
+		</action>
+		<action path="/Control_Vacunas/Popup/add_vacuna" parameter="ADD_CONTROL" type="com.servidoctor.sdfamily.controller.PopupControlVacunasAction" scope="request" name="vacunasUsuarioForm" validate="false">
+			<forward name="success" redirect="false" path="sdfamily.control_vacunas.popup_vacuna_add" />
+		</action>
+		<action path="/DatosMascota/report" parameter="REPORT" type="com.servidoctor.sdpets.controller.MascotaAction" scope="request" name="mascotaCompletoForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.report" />
+		</action>
+		<action path="/DatosMascota/add" parameter="ADD" type="com.servidoctor.sdpets.controller.MascotaAction" scope="session" name="mascotaCompletoForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.add" />
+		</action>
+		<action path="/DatosMascota/recarga" parameter="LOAD" type="com.servidoctor.sdpets.controller.MascotaAction" scope="session" name="mascotaCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="sdpets.datosMascota.edit" />
+		</action>
+		<action path="/DatosMascota/remove" parameter="REMOVE" type="com.servidoctor.sdpets.controller.MascotaAction" scope="session" name="mascotaCompletoForm" validate="false">
+			<forward name="success" path="/DatosMascota/list.do" />
+		</action>
+		<action path="/DatosMascota/edit" parameter="EDIT" type="com.servidoctor.sdpets.controller.MascotaAction" scope="session" name="mascotaCompletoForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.edit" />
+		</action>
+		<action path="/DatosMascota/save" parameter="SAVE" type="com.servidoctor.sdpets.controller.MascotaAction" scope="request" name="mascotaCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosMascota/list.do" />
+			<forward name="failure" redirect="false" path="/DatosMascota/list.do" />
+		</action>
+		<action path="/DatosMascota/saveEdit" parameter="SAVEEDIT" type="com.servidoctor.sdpets.controller.MascotaAction" scope="request" name="mascotaCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosMascota/edit.do" />
+		</action>
+		<action path="/DatosMascota/list" parameter="LIST" type="com.servidoctor.sdpets.controller.MascotaAction" scope="request" name="mascotaCompletoForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.list" />
+		</action>
+		<action path="/DatosMascota/aspectos_generales" forward="sdpets.datosMascota.aspectos" />
+
+		<action path="/DatosMascota/manual_perros" forward="/manager/sdpets/ManualPerros.jsp"/>
+			
+		<action path="/DatosMascota/manual_gatos" forward="/manager/sdpets/ManualGatos.jsp"/>
+		
+		<action path="/DatosMascota/Popup/transferir_control" parameter="TRASF_CONTROL" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="controlCuidadosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/edit_control" parameter="EDIT_CONTROL" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="controlCuidadosForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup_control_edit" />
+		</action>
+		<action path="/DatosMascota/Popup/add_vacuna" parameter="ADD_VACUNA" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="vacunasCuidadosForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup_vacuna_add" />
+		</action>
+		<action path="/DatosMascota/Popup/add_seguro_pets" parameter="ADD_SEGURO_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="seguroPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup_seguro_add" />
+		</action>
+		<action path="/DatosMascota/Popup/remove_seguro_pets" parameter="REMOVE_SEGURO_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="seguroPetsForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/trasferir_segpets" parameter="TRASF_SEGURO_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="seguroPetsForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/edit_seguro_pets" parameter="EDIT_SEGURO_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="seguroPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup_seguro_edit" />
+		</action>
+
+		<action path="/DatosMascota/Popup/add_cir_pets" parameter="ADD_CIR_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="CirugiasPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup.add_cir" />
+		</action>
+		<action path="/DatosMascota/Popup/edit_cir_pets" parameter="EDIT_CIR_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="CirugiasPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup.edit_cir" />
+		</action>
+		<action path="/DatosMascota/Popup/remove_cir_pets" parameter="REMOVE_CIR_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="CirugiasPetsForm" validate="false">
+			<forward name="success"  redirect="true" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/trasf_cir_pets" parameter="TRASF_CIR_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="CirugiasPetsForm" validate="false">
+			<forward name="success"  redirect="false" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/add_ale_pets" parameter="ADD_ALE_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="AlergiasPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup.add_alergia" />
+		</action>
+		<action path="/DatosMascota/Popup/edit_ale_pets" parameter="EDIT_ALE_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="AlergiasPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup.edit_alergia" />
+		</action>
+		<action path="/DatosMascota/Popup/remove_ale_pets" parameter="REMOVE_ALE_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="AlergiasPetsForm" validate="false">
+			<forward name="success"  redirect="true" path="/DatosMascota/recarga.do"/>
+		</action>
+		<action path="/DatosMascota/Popup/trasf_ale_pets" parameter="TRASF_ALE_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="AlergiasPetsForm" validate="false">
+			<forward name="success"  redirect="false" path="/DatosMascota/recarga.do"/>
+		</action>
+		
+		
+		<action path="/DatosMascota/Popup/add_enfermedad_pets" parameter="ADD_ENF_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="EnfermedadesPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup.add_enf" />
+		</action>
+		<action path="/DatosMascota/Popup/trasf_enf_pets" parameter="TRASF_ENF_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="EnfermedadesPetsForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/edit_enfermedad_pets" parameter="EDIT_ENF_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="EnfermedadesPetsForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup.edit_enf" />
+		</action>
+		<action path="/DatosMascota/Popup/remove_enfermedad_pets" parameter="REMOVE_ENF_PETS" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="EnfermedadesPetsForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosMascota/recarga.do" />
+		</action>
+		
+		
+		
+		<action path="/DatosMascota/Popup/edit_vacuna" parameter="EDIT_VACUNA" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="vacunasCuidadosForm" validate="false">		                                 
+			<forward name="success" path="sdpets.datosMascota.popup_vacuna_edit" />
+		</action>		
+		<action path="/DatosMascota/Popup/remove_vacuna" parameter="REMOVE_VACUNA" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="vacunasCuidadosForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/transferir_vacuna" parameter="TRASF_VACUNA" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="vacunasCuidadosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/add_medicamento" parameter="ADD_MEDICAMENTO" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="mascotaMedicamentosForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup_medicamento_add" />
+		</action>
+		<action path="/DatosMascota/Popup/remove_medicamento" parameter="REMOVE_MEDICAMENTO" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="mascotaMedicamentosForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/transferir_medicamento" parameter="TRASF_MEDICAMENTO" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="mascotaMedicamentosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosMascota/recarga.do" />
+		</action>
+		<action path="/DatosMascota/Popup/edit_medicamento" parameter="EDIT_MEDICAMENTO" type="com.servidoctor.sdpets.controller.PopupAction" scope="request" name="mascotaMedicamentosForm" validate="false">
+			<forward name="success" path="sdpets.datosMascota.popup_medicamento_edit" />
+		</action>
+		<!-- Carne Pets-->
+		<action path="/CarnePets/view" parameter="VIEW" type="com.servidoctor.sdpets.controller.CarnePetsAction" scope="request" name="usuarioPetsForm" validate="false">
+			<forward name="success" redirect="false" path="sdpets.carne.view" />
+			
+		</action>
+		<action path="/CarnePets/generar" parameter="GENERATE" type="com.servidoctor.sdpets.controller.CarnePetsAction" scope="request" name="usuarioPetsForm" validate="false">
+			<forward name="success" redirect="false" path="/CarnePets/view.do" />
+		</action>	
+		<action path="/CarnePets/Popup/preview" parameter="PREVIEW" type="com.servidoctor.sdpets.controller.CarnePetsAction" scope="request" name="usuarioPetsForm" validate="false">
+			<forward name="success" redirect="false" path="sdpets.carne.preview" />			
+		</action>		
+		
+		<!-- Fin Carne -->
+		
+		
+		
+		
+		
+		<action path="/DatosVehiculo/report" parameter="REPORT" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.report" />
+		</action>
+		<action path="/DatosVehiculo/add" parameter="ADD" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.add" />
+		</action>
+		<action path="/DatosVehiculo/recarga" parameter="LOAD" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="session" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.edit" />
+		</action>
+		<action path="/DatosVehiculo/recarga2" parameter="LOADCONTROLES" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="session" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.editcontroles" />
+		</action>
+		<action path="/DatosVehiculo/remove" parameter="REMOVE" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="session" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="/DatosVehiculo/list.do" />
+		</action>
+		<action path="/DatosVehiculo/aspectos_generales" forward="sdcars.datosVehiculo.aspectos"/>
+	
+		<action path="/DatosVehiculo/curva" parameter="CURVA" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="vehiculo" path="/DatosVehiculo/dellist.do" />
+			<forward name="success" path="sdcars.datosVehiculo.curva" />
+		</action>
+		<action path="/DatosVehiculo/saveCurva" parameter="SAVECURVA" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.curva" />
+		</action>
+		<action path="/DatosVehiculo/saveOdometro" parameter="SAVEODOMETRO" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.saveOdometro" />
+		</action>
+		<action path="/DatosVehiculo/edit" parameter="EDIT" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="session" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.edit" />
+		</action>
+		<action path="/DatosVehiculo/editcontroles" parameter="EDITCONTROLES" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="session" name="vehiculosCompletoForm" validate="false">
+			<forward name="vehiculo" path="/DatosVehiculo/dellist.do" />
+			<forward name="success" path="sdcars.datosVehiculo.editcontroles" />
+		</action>
+
+		<action path="/DatosVehiculo/save" parameter="SAVEFIRST" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/dellist.do" />
+		</action>
+		<action path="/DatosVehiculo/cancel" parameter="CANCELAR" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" redirect="true" path="/template/layoutCar.htm" />
+		</action>
+		<action path="/DatosVehiculo/saveEdit" parameter="SAVEEDIT" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga.do" />
+		</action>
+		<action path="/DatosVehiculo/saveEditControl" parameter="SAVEEDITCONTROL" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+			<forward name="failure" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/list" parameter="LIST" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.list" />
+		</action>
+		<action path="/DatosVehiculo/dellist" parameter="DELLIST" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.dellist" />
+		</action>
+		<action path="/DatosVehiculo/odometro" parameter="ODOMETRO" type="com.servidoctor.sdcars.controller.VehiculosAction" scope="request" name="vehiculosCompletoForm" validate="false">
+			<forward name="vehiculo" path="/DatosVehiculo/dellist.do" />
+			<forward name="success" path="sdcars.datosVehiculo.odometro" />
+		</action>
+		
+		<action path="/DatosVehiculo/Popup/add_seguro" parameter="ADD_SEGURO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="segurosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_seguro_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_seguro" parameter="REMOVE_SEGURO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="segurosVehiculosForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_seguro" parameter="TRASF_SEGURO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="segurosVehiculosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_seguro" parameter="EDIT_SEGURO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="segurosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_seguro_edit" />
+		</action>		
+		<action path="/DatosVehiculo/Popup/add_control" parameter="ADD_CONTROL" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="controlesVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_control_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_control" parameter="REMOVE_CONTROL" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="controlesVehiculosForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_control" parameter="TRASF_CONTROL" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="controlesVehiculosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_control" parameter="EDIT_CONTROL" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="controlesVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_control_edit" />
+		</action>		
+		<action path="/DatosVehiculo/Popup/add_revision" parameter="ADD_REVISIONES" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="revisionesVehiculoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_revision_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_revision" parameter="REMOVE_REVISIONES" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="revisionesVehiculoForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/undo_revision" parameter="UNDO_REVISIONES" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="revisionesVehiculoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_revision" parameter="TRASF_REVISIONES" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="revisionesVehiculoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_revision" parameter="EDIT_REVISIONES" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="revisionesVehiculoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_revision_edit" />
+		</action>
+		
+		<action path="/DatosVehiculo/Popup/add_gastosmecanica" parameter="ADD_GASTOS_MEC" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_gastosmecanica_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_gastosmecanica" parameter="REMOVE_GASTOS_MEC" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_gastosmecanica" parameter="TRASF_GASTOS_MEC" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_gastosmecanica" parameter="EDIT_GASTOS_MEC" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_gastosmecanica_edit" />
+		</action>
+		
+		
+		<action path="/DatosVehiculo/Popup/add_gastos" parameter="ADD_GASTOS" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_gastos_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_gastos" parameter="REMOVE_GASTOS" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_gastos" parameter="TRASF_GASTOS" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_gastos" parameter="EDIT_GASTOS" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_gastos_edit" />
+		</action>
+		<action path="/DatosVehiculo/Popup/add_gastosanuales" parameter="ADD_GASTOSANU" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_gastosanuales_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_gastosanuales" parameter="REMOVE_GASTOSANU" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_gastosanuales" parameter="TRASF_GASTOSANU" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_gastosanuales" parameter="EDIT_GASTOSANU" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="gastosVehiculosForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_gastosanuales_edit" />
+		</action>
+		<action path="/DatosVehiculo/Popup/add_impuesto" parameter="ADD_IMPUESTO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="impuestoVehiculoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_impuesto_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_impuesto" parameter="REMOVE_IMPUESTO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="impuestoVehiculoForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_impuesto" parameter="TRASF_IMPUESTO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="impuestoVehiculoForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_impuesto" parameter="EDIT_IMPUESTO" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="impuestoVehiculoForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_impuesto_edit" />
+		</action>
+
+		<action path="/DatosVehiculo/Popup/add_combustible" parameter="ADD_COMBUSTIBLE" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="combustibleForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_combustible_add" />
+		</action>
+		<action path="/DatosVehiculo/Popup/remove_combustible" parameter="REMOVE_COMBUSTIBLE" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="combustibleForm" validate="false">
+			<forward name="success" redirect="true" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/transferir_combustible" parameter="TRASF_COMBUSTIBLE" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="combustibleForm" validate="false">
+			<forward name="success" redirect="false" path="/DatosVehiculo/recarga2.do" />
+		</action>
+		<action path="/DatosVehiculo/Popup/edit_combustible" parameter="EDIT_COMBUSTIBLE" type="com.servidoctor.sdcars.controller.PopupAction" scope="request" name="combustibleForm" validate="false">
+			<forward name="success" path="sdcars.datosVehiculo.popup_combustible_edit" />
+		</action>		
+
+	</action-mappings>
+	
+	<controller processorClass="com.essecorp.utils.struts.controller.CustomRequestProcessor" />
+     
+ 
+	<!-- Message Resources -->
+	<message-resources parameter="com.servidoctor.resources.ApplicationResources" null="false"/>
+	  <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+	    <set-property property="definitions-config" value="/WEB-INF/tiles-def.xml"/>
+	    <set-property property="definitions-debug" value="0"/>
+	    <set-property property="definitions-parser-details" value="0"/>
+	    <set-property property="definitions-parser-validate" value="true"/>
+	  </plug-in>
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,
+                                                  /WEB-INF/validation.xml"/>
+      </plug-in>
+
+</struts-config>

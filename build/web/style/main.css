@@ -1,0 +1,106 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+TD {
+	color: #ffffff;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.copy {
+	font-size: 9px;
+}
+
+.copy A {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 9px;
+}
+
+.infocuadro {
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.infoboton {
+	text-align: right;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+.vermas {
+	cursor: pointer;
+	color: #ffffff;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.tablalogin {
+	margin-left: 5px;
+	margin-top: 25px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+.tdlogin {
+	color: #333333;
+	font-family: verdana;
+	font-size: 12px;
+}
+
+input {
+	width: 110px;
+	color: #333333;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.login {
+	margin-top: 3px;
+	width: 80px;
+	height: 18px;
+	cursor: pointer;
+	color: #666666;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sel {
+	width: 80px;
+	color: #666666;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+A {
+	color: #006699;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.error {
+	color: #CC0000;
+	font-family: verdana;
+	font-size: 9px;
+	font-weight: bold;
+	text-align: center;
+}

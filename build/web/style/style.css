@@ -1,0 +1,350 @@
+BODY
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    COLOR: #333366;
+    FONT-FAMILY: 'Times New Roman'
+}
+H1
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H2
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H3
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+
+H4
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+
+H5
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H6
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+TH {
+ color: #6060cc
+}
+
+.tdtitle
+{
+	text-align: center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000066
+}
+.sub_tdtitle
+{
+	text-align: center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000066
+}
+
+.tdtitleR
+{
+
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000066
+}
+
+.tdtitleL
+{
+
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000066
+}
+
+.tdtext
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #3366CC;
+}
+
+.sub_tdtext
+{
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #3366CC;
+}
+
+.tdtextC
+{
+
+	font-family: Tahoma;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #3366CC;
+	text-align: center;
+}
+
+.tdtextForMenu
+{
+	
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000066;
+}
+
+.tdLeftTitle
+{
+	text-align: left;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #3366CC;
+	height: 20px
+}
+
+
+.tdContentText
+{
+	text-align: left;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #848284;
+}
+.tdContentTextR
+{
+	text-align: right;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #848284;
+}
+.tdContentTextC
+{
+	text-align: center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #848284;
+}
+
+.tdContentTextRED
+{
+	text-align: left;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: red;
+}
+.tdContentTextRED_C
+{
+	text-align: center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: red;
+}
+.tdminContentText
+{
+	text-align: left;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 7pt;
+	font-weight: bold;
+	color: #848284;
+}
+
+.tdLoginData
+{
+	text-align: center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #848284;
+}
+
+.tdCopData
+{
+	text-align: center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CCCCCC;
+	background-color: #F5F5F5;
+}
+
+.tdFilterText
+{
+	text-align: left;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000066;
+	background-color: #EEEEEE
+}
+
+.tdFilterTextII
+{
+	text-align: left;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000066;
+	background-color: #DFDFDF
+}
+
+.tdlistText
+{
+	text-align: center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #f5f5f5;
+	background-color: #3366CC;	
+}
+
+.tdContentTextRight
+{
+	text-align: right;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #848284;
+}
+.tdContentTextC
+{
+	text-align:center;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #848284;
+
+
+}
+
+input {	
+	font-family: Tahoma;	
+	font-size:10px;
+	color: #000066;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	       
+	}
+
+.boton{
+        font-size:10px;
+        font-family:Tahoma;
+        font-weight:bold;
+        color:#000066;
+        border:1px;
+        border-style: solid;
+        width:80px;
+        height:19px;
+       }
+.botonL{
+        font-size:10px;
+        font-family:Tahoma;
+        font-weight:bold;
+        color:#000066;
+        border:1px;
+        border-style: solid;
+       
+        height:19px;
+       }
+
+
+.aClassSelect {
+width:80px;
+background-color:#f5f5f5;
+color:#000066;
+font-family:Tahoma;
+font-size:10px;
+font-weight:bold;
+}
+.aClassSelectL { 
+background-color:#f5f5f5;
+color:#000066;
+font-family:Tahoma;
+font-size:10px;
+font-weight:bold;
+}
+.textArea
+{
+ text-align: left;
+	vertical-align: middle;
+	font-family: Tahoma;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000066;
+	background-color: #ffffff
+}
+.tab
+{
+    	font-size:12px;
+        font-family:Tahoma;
+        font-weight:bold;
+        color:#000066;
+        border:1px;
+        border-style: solid;
+        height:19px;
+        cursor: hand;
+    	background-color: #F5F5F5;
+ 	    border-color:#000066;
+	    border-bottom: 0px;
+}
+.tabIni 
+{
+    	font-size:12px;
+        font-family:Tahoma;
+        font-weight:bold;
+        color:#FFFFFF;
+        border:1px;
+        border-style: solid;
+        height:19px;
+        cursor: hand;
+    	background-color: #E48623;
+ 	    border-color:#000066;
+	    border-bottom: 0px;
+}

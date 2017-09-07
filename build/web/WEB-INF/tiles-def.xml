@@ -1,0 +1,471 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration//EN"
+  "http://jakarta.apache.org/struts/dtds/tiles-config.dtd">
+
+<!-- Generated with Karapan Sapi Struts Generator -->
+<!-- Visit http://www.javanovic.com         -->
+
+<tiles-definitions>
+  <definition name="doc.mainLayout" path="/template/classicLayout.jsp">
+		<put name="title" value="Title" />
+		<put name="body" value="/template/main.jsp" />
+	</definition>
+	<definition name="doc.popup" path="/template/popup.jsp">
+		<put name="title" value="Title" />
+	</definition>
+	<definition name="error.page" extends="doc.mainLayout">
+		<put name="title" value="Error" />
+		<put name="body" value="/failure.jsp" />
+	</definition>
+	
+	
+	
+	<!-- <<<<<<<<<<<<<< PARAMETROS >>>>>>>>>>>>>>> -->
+	<definition name="param.usuario.list" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/parametros/usuario/listar.jsp" />
+	</definition>
+
+
+
+	<!-- <<<<<<<<<<<<<< SDFAMILY >>>>>>>>>>>>>>> -->
+	<definition name="sdfamily.carne.view" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/Carne.jsp" />
+	</definition>
+	<definition name="sdfamily.aspectosGenerales.aspectos_generales" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/AspectosGenerales.jsp" />
+	</definition>
+	<definition name="sdfamily.datosPerso.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/DatosPersonales.jsp" />
+	</definition>
+	<definition name="sdfamily.datosPerso.edit" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/DatosPersonalesEdit.jsp" />
+	</definition>
+	<definition name="sdfamily.datosPerso.exito" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/exito.jsp" />
+	</definition>
+	<definition name="sdfamily.datosPerso.disclaimer" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_datos_p/disclaimer.jsp" />
+	</definition>
+	<definition name="sdfamily.datosPerso.popup_con_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_datos_p/Popup_contacto_add.jsp" />
+	</definition>
+	<definition name="sdfamily.datosPerso.popup_con_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_datos_p/Popup_contacto_edit.jsp" />
+	</definition>
+	
+	<definition name="sdfamily.datosPerso.popup_seguro_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_datos_p/Popup_seguro_add.jsp" />
+	</definition>
+	<definition name="sdfamily.datosPerso.popup_seguro_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_datos_p/Popup_seguro_edit.jsp" />
+	</definition>
+	<!--Historia Medica-->
+	<definition name="sdfamily.historiaMedica.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/HistoriaMedica.jsp" />
+	</definition>
+
+	<definition name="sdfamily.historiaMedica.popup.add_enf" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_enf_add.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.edit_enf" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_enf_edit.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.add_alerg" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_alerg_add.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.edit_alerg" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_alerg_edit.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.add_cir" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_cir_add.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.edit_cir" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_cir_edit.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.add_medto" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_medto_add.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.edit_medto" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_medto_edit.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.add_ante" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_ante_add.jsp" />
+	</definition>
+	<definition name="sdfamily.historiaMedica.popup.edit_ante" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_hist_m/Popup_ante_edit.jsp" />
+	</definition>
+
+
+	<!--Fin Historia Medica-->
+	<!--Optometria-->
+	<definition name="sdfamily.controlOpto.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/ControlOptom.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlOpto.popup_tabla_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_optom/Popup_op_edit.jsp" />
+	</definition>
+	<definition name="sdfamily.controlOpto.popup_tabla_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_optom/Popup_op_add.jsp" />
+	</definition>
+
+	<!--fin Optometria-->
+
+	<!-- Otros Controles Family -->
+	<definition name="sdfamily.controlOtro.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/ControlOtro.jsp" />
+	</definition>
+	<definition name="sdfamily.controlOtro.view" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/ControlOtro.jsp" />
+	</definition>
+	
+	<definition name="sdfamily.controlOtro.popup_controlconcita_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_otros/Popup_control_otroconcita_edit.jsp" />
+	</definition>
+	<definition name="sdfamily.controlOtro.popup_controlconcita_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_otros/Popup_control_otroconcita_add.jsp" />
+	</definition>
+	
+
+	<!-- PopUps -->
+
+	<definition name="sdfamily.controlOtro.popup_control_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_otros/Popup_control_otro_edit.jsp" />
+	</definition>
+	<definition name="sdfamily.controlOtro.popup_control_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_otros/Popup_control_otro_add.jsp" />
+	</definition>
+	
+	<!--fin Otros Controles Family-->
+
+	<!-- PopUps Carne-->
+
+	<definition name="sdfamily.carne.preview" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_carne/Popup_carne_preview.jsp" />
+	</definition>
+	
+	<!--Fin Controles Carne-->
+		
+	<!--Odontologia-->
+	<definition name="sdfamily.controlOdonto.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/ControlOdonto.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlOdonto.popup_tabla_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_odont/Popup_odont_tabla_edit.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlOdonto.popup_tabla_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_odont/Popup_odont_tabla_add.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlOdonto.popup_controlu_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_odont/Popup_odont_controlu_edit.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlOdonto.popup_controlu_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_odont/Popup_odont_controlu_add.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlOdonto.popup_controlp_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_odont/Popup_odont_controlp_edit.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlOdonto.popup_controlp_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_odont/Popup_odont_controlp_add.jsp" />
+	</definition>
+
+	<!--fin Odontologia-->
+	<definition name="sdfamily.controlMedico.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/ControlesMedicos.jsp" />
+	</definition>
+	<definition name="sdfamily.control_medico.popup_tabla_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_con_m/Popup_med_tabla_edit.jsp" />
+	</definition>
+
+	<definition name="sdfamily.control_medico.popup_tabla_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_con_m/Popup_med_tabla_add.jsp" />
+	</definition>
+
+	<definition name="sdfamily.control_medico.popup_controlu_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_con_m/Popup_med_controlu_edit.jsp" />
+	</definition>
+
+	<definition name="sdfamily.control_medico.popup_controlp_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_con_m/Popup_med_controlp_edit.jsp" />
+	</definition>
+
+	<definition name="sdfamily.controlVacunas.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/ControlVacunas.jsp" />
+	</definition>
+
+	
+	<definition name="sdfamily.control_vacunas.popup_vacuna_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/popup_vacunas/Popup_vacunas_add.jsp" />
+	</definition>
+	
+	<!-- <<<<<<<<<<<<<< SDPETS >>>>>>>>>>>>>>> -->
+	<definition name="sdpets.carne.view" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/CarnePets.jsp" />
+	</definition>
+		<!-- PopUps Carne Pets-->
+
+	<definition name="sdpets.carne.preview" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_carne/Popup_carne_preview.jsp" />
+	</definition>
+	
+	<!--Fin Controles Carne Pets-->
+	
+	
+	<definition name="sdpets.datosMascota.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/AddMascota.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.edit" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/EditMascota.jsp" />
+	</definition>
+
+	<definition name="sdpets.datosMascota.list" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/ListMascota.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.aspectos" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/AspectosGenerales.jsp" />
+	</definition>	
+	<definition name="sdpets.manualPerros" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/ManualPerros.jsp" />
+	</definition>	
+	<definition name="sdpets.manualGatos" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/ManualGatos.jsp" />
+	</definition>
+	
+
+	<definition name="sdpets.datosMascotas.exito" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/exito.jsp" />
+	</definition>
+
+	<definition name="sdpets.datosMascota.popup_control_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_control_add.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup_control_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_control_edit.jsp" />
+	</definition>
+	
+	<definition name="sdpets.datosMascota.popup_vacuna_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_vacuna_add.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup_vacuna_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_vacuna_edit.jsp" />
+	</definition>
+	
+	<definition name="sdpets.datosMascota.popup_medicamento_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_medicamento_add.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup_medicamento_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_medicamento_edit.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup_seguro_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_seguro_add.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup_seguro_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_seguro_edit.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup.add_cir" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_cir_add.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup.edit_cir" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_cir_edit.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup.add_alergia" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_alerg_add.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup.edit_alergia" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_alerg_edit.jsp" />
+	</definition>
+		<definition name="sdpets.datosMascota.popup.add_enf" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_enf_add.jsp" />
+	</definition>
+	<definition name="sdpets.datosMascota.popup.edit_enf" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdpets/popup_mascotas/Popup_enf_edit.jsp" />
+	</definition>
+	<!-- <<<<<<<<<<<<<< SDCAR >>>>>>>>>>>>>>> -->
+	<definition name="sdcars.datosVehiculo.add" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/AddVehiculo.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.edit" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/EditVehiculo.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.editcontroles" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/EditControles.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.loadcontroles" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/EditControles.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.list" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/ListVehiculo.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.dellist" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/AddDeleteVehiculo.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.aspectos" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/AspectosGenerales.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.curva" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/CurvaVehiculo.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.saveOdometro" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/EditOdometro.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.odometro" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/EditOdometro.jsp" />
+	</definition>	
+	<definition name="sdcars.datosVehiculos.exito" extends="doc.mainLayout">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdfamily/exito.jsp" />
+	</definition>
+
+	<definition name="sdcars.datosVehiculo.popup_control_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_control_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_control_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_control_edit.jsp" />
+	</definition>
+
+	<definition name="sdcars.datosVehiculo.popup_seguro_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_seguro_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_seguro_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_seguro_edit.jsp" />
+	</definition>
+	
+	<definition name="sdcars.datosVehiculo.popup_revision_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_revision_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_revision_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_revision_edit.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_gastosmecanica_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_gastosmecanica_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_gastosmecanica_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_gastosmecanica_edit.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_gastos_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_gastos_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_gastos_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_gastos_edit.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_gastosanuales_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_gastosanuales_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_gastosanuales_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_gastosanuales_edit.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_impuesto_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_impuesto_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_impuesto_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_impuesto_edit.jsp" />
+	</definition>
+
+	<definition name="sdcars.datosVehiculo.popup_combustible_add" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_combustible_add.jsp" />
+	</definition>
+	<definition name="sdcars.datosVehiculo.popup_combustible_edit" extends="doc.popup">
+		<put name="title" value="ServiDoctor" />
+		<put name="body" value="/manager/sdcars/popup_vehiculos/Popup_combustible_edit.jsp" />
+	</definition>
+</tiles-definitions>

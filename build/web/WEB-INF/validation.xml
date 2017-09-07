@@ -1,0 +1,255 @@
+<form-validation>
+  <formset>
+  	<form name="paramentryForm">
+      <field property="tipo" depends="required,maxLength">
+        <arg0 key="50"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>          
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="nombre" depends="required">
+        <arg0 key="124"/>        
+      </field>
+      <field property="numval" depends="required,integer,mask">
+        <arg0 key="148"/>  
+        <var>
+            <var-name>mask</var-name>
+            <var-value>[0-9]+</var-value>
+          </var>      
+      </field>
+      <field property="longitud" depends="required,integer,mask">
+        <arg0 key="148"/>  
+        <var>
+            <var-name>mask</var-name>
+            <var-value>[0-9]+</var-value>
+          </var>      
+      </field>
+    </form>
+    <form name="usersForm">
+      <field property="firstName" depends="required,mask,maxLength">
+        <arg0 key="Users.firstName"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+          <var>
+            <var-name>mask</var-name>
+            <var-value>[a-zA-Z ']+</var-value>
+          </var>
+          <msg name="mask" key="Users.firstName.maskmsg"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="lastName" depends="required,mask,maxLength">
+        <arg0 key="Users.lastName"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+          <var>
+            <var-name>mask</var-name>
+            <var-value>[a-zA-Z ']+</var-value>
+          </var>
+          <msg name="mask" key="Users.lastName.maskmsg"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>30</var-value>
+        </var>
+      </field>
+      <field property="sex" depends="required,integer">
+        <arg0 key="Users.sex"/>
+      </field>
+      <field property="password" depends="required,maxLength">
+        <arg0 key="Users.password"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="role" depends="required,maxLength">
+        <arg0 key="Users.role"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="login" depends="required,mask,maxLength">
+        <arg0 key="Users.login"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+          <var>
+            <var-name>mask</var-name>
+            <var-value>[a-zA-Z0-9]+</var-value>
+          </var>
+          <msg name="mask" key="Users.login.maskmsg"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+    </form>
+
+
+    <form name="usersAddMemberForm">
+      <field property="login" depends="required,mask,maxLength" page="1">
+        <arg0 key="Users.login"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+          <var>
+            <var-name>mask</var-name>
+            <var-value>[a-zA-Z0-9]+</var-value>
+          </var>
+          <msg name="mask" key="Users.login.maskmsg"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="password" depends="required,maxLength" page="1">
+        <arg0 key="Users.password"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="firstName" depends="required,mask,maxLength" page="2">
+        <arg0 key="Users.firstName"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+          <var>
+            <var-name>mask</var-name>
+            <var-value>[a-zA-Z ']+</var-value>
+          </var>
+          <msg name="mask" key="Users.firstName.maskmsg"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="lastName" depends="required,mask,maxLength" page="2">
+        <arg0 key="Users.lastName"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+          <var>
+            <var-name>mask</var-name>
+            <var-value>[a-zA-Z ']+</var-value>
+          </var>
+          <msg name="mask" key="Users.lastName.maskmsg"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>30</var-value>
+        </var>
+      </field>
+      <field property="sex" depends="required,integer" page="2">
+        <arg0 key="Users.sex"/>
+      </field>
+      <field property="role" depends="required,maxLength" page="3">
+        <arg0 key="Users.role"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+    </form>
+    <form name="roleForm">
+      <field property="name" depends="required,maxLength">
+        <arg0 key="Role.name"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>20</var-value>
+        </var>
+      </field>
+      <field property="id" depends="required,integer">
+        <arg0 key="Role.id"/>
+      </field>
+    </form>
+
+
+    <form name="companyForm">
+      <field property="name" depends="required,maxLength">
+        <arg0 key="Company.name"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>50</var-value>
+        </var>
+      </field>
+      <field property="address" depends="required,maxLength">
+        <arg0 key="Company.address"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>50</var-value>
+        </var>
+      </field>
+      <field property="city" depends="required,maxLength">
+        <arg0 key="Company.city"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>50</var-value>
+        </var>
+      </field>
+      <field property="zip" depends="required,maxLength">
+        <arg0 key="Company.zip"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>6</var-value>
+        </var>
+      </field>
+      <field property="country" depends="required,maxLength">
+        <arg0 key="Company.country"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>50</var-value>
+        </var>
+      </field>
+      <field property="foundDate" depends="integer">
+        <arg0 key="Company.foundDate"/>
+      </field>
+      <field property="id" depends="required,integer">
+        <arg0 key="Company.id"/>
+      </field>
+    </form>
+
+
+    <form name="countryForm">
+      <field property="name" depends="required,maxLength">
+        <arg0 key="Country.name"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+          <var-name>maxlength</var-name>
+          <var-value>50</var-value>
+        </var>
+      </field>
+      <field property="id" depends="required,integer">
+        <arg0 key="Country.id"/>
+      </field>
+    </form>
+
+
+    <form name="logForm">
+      <field property="byteIn" depends="required,long">
+        <arg0 key="Log.byteIn"/>
+      </field>
+      <field property="byteOut" depends="required,long">
+        <arg0 key="Log.byteOut"/>
+      </field>
+      <field property="capacity" depends="required,float">
+        <arg0 key="Log.capacity"/>
+      </field>
+      <field property="charge" depends="required,double">
+        <arg0 key="Log.charge"/>
+      </field>
+      <field property="year" depends="required,integer">
+        <arg0 key="Log.year"/>
+      </field>
+      <field property="month" depends="required,integer">
+        <arg0 key="Log.month"/>
+      </field>
+    </form>
+
+
+  </formset>
+</form-validation>

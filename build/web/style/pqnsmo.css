@@ -1,0 +1,126 @@
+/* PQNSMO STYLES */
+
+BODY{
+margin:0 0 0 0;
+}
+.topmen{
+background-color:#667AA2;
+color:#ffffff;
+font-family: trebuchet ms; 
+font-size:12px;
+font-weight:bold;
+height:17px;
+border-left:1px solid #99CCFF;
+text-align:center;
+background-image:url("../img/f_t_b.jpg");
+}
+.topmen A{
+color:#ffffff;
+text-decoration:none;
+}
+.topmen A:hover{
+color:#FFFF00;
+text-decoration:none;
+}
+
+.as_title{
+color:#ffffff;
+font-family: trebuchet ms; 
+font-size:14px;
+font-weight:bold;
+text-align:right;
+padding-right:5px;
+}
+.login A{
+color:#333333;
+font-family: trebuchet ms; 
+font-size:12px;
+font-weight:bold;
+text-align:center;
+text-decoration:none;
+}
+.login A:hover{
+color:blue;
+font-family: trebuchet ms; 
+font-size:12px;
+font-weight:bold;
+text-align:center;
+text-decoration:none;
+}
+.fra_top{
+height:10px;
+color:#990000;
+font-family: trebuchet ms; 
+font-size:15px;
+font-weight:bold;
+text-align:right;
+line-height:17px;
+}
+.fra_rot{
+height:10px;
+color:#333333;
+font-family: trebuchet ms; 
+font-size:28px;
+font-weight:bold;
+text-align:right;
+
+}
+.int_text{
+padding:5 15 0 10;
+color:#ffffff;
+font-family: trebuchet ms; 
+font-size:12px;
+font-weight:bold;
+text-align:right;
+line-height:13px;
+}
+
+.sust_text{
+padding:5 0 0 10;
+color:#000066;
+font-family: trebuchet ms; 
+font-size:20px;
+font-weight:bold;
+line-height:20px;
+}
+.sust_text A{
+color:#000066;
+text-decoration:none;
+}
+
+.sust_val{
+padding:5 7 0 5;
+color:#0000FF;
+font-family: trebuchet ms; 
+font-size:11px;
+font-weight:bold;
+line-height:11px;
+text-align:center;
+}
+.sust_val A{
+color:#0000FF;
+text-decoration:none;
+}
+
+.b_link{
+padding:3 3 3 3;
+color:#333333;
+font-family: trebuchet ms; 
+font-size:10px;
+font-weight:bold;
+line-height:11px;
+text-align:left;
+}
+.b_link A{
+color:#333333;
+text-decoration:none;
+}
+.bab_text{
+padding:3 3 3 5;
+color:#00397B;
+font-family: trebuchet ms; 
+font-size:9px;
+font-weight:normal;
+line-height:11px;
+text-align:right;
+}

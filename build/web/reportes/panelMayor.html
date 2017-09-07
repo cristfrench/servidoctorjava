@@ -1,0 +1,103 @@
+
+<HTML>
+	<HEAD>
+		<meta http-equiv="expires" content="-1">
+		<LINK rel="stylesheet" href="/ServiDoctor/style/estilo_family.css" type="text/css">
+		<SCRIPT language="JavaScript">
+	function enviar() {
+		document.forms[0].codigoMayor.value == location.search.request('codigoMayor');
+		document.forms[0].submit();
+	}
+
+String.prototype.request = function(name){ 
+var names = new String(); 
+var request = this.replace(/\?/, '').split(/&/g); 
+for(var i = 0; i < request.length; i++){ 
+request[i] = request[i].split(/=/); 
+names += request[i][0] + '; '; 
+if(request[i][0] == name) return unescape(request[i][1]); 
+} 
+if(name) return undefined; 
+return names; 
+}
+</SCRIPT>
+	</HEAD>
+	<BODY>
+		<form action="/ServiDoctor/PanelMayor/report.do">
+			<input type="hidden" name="codigoMayor" id="codigoMayor" />
+			<TABLE border="0" width="550px" align="center">
+				<TR>
+					<TD>
+						<TABLE class="tablag" align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+							<TR>
+								<TD>
+									<TABLE class="tablag" border="0" id="tab2" cellspacing="0" cellpadding="0" width="70%" align="center">
+										<TR>
+											<TD colspan="2">
+												<IMG src="/ServiDoctor/images/int_tit_family.gif">
+												<HR>
+											</TD>
+										</TR>
+										<TR>
+											<TD colspan="2" class="tdOverNameOption">
+												Consultas panel mayor
+											</TD>
+										</TR>
+										<TR>
+											<TD colspan="2" style="background-color: #f1f5fa">
+												&nbsp;
+											</TD>
+										</TR>
+										<TR>
+											<TD class="view_item">
+												Consultas para Family
+											</TD>
+											<TD class="view_item" colspan="2">
+												<input type="radio" name="report" value="family" checked="checked" />
+											</TD>
+										</TR>
+										<TR>
+											<TD class="view_item">
+												Consultas para Pets
+											</TD>
+											<TD class="view_item" colspan="2">
+												<input type="radio" name="report" value="pets" />
+											</TD>
+										</TR>
+										<TR>
+											<TD class="view_item">
+												Consultas para Car
+											</TD>
+											<TD class="view_item" colspan="2">
+												<input type="radio" name="report" value="car" />
+											</TD>
+										</TR>
+										<TR>
+											<TD class="view_item" colspan="2">
+												Tipo de archivo respuesta:
+												<input type="radio" name="archivo" value="plano" checked="checked" />
+												Plano
+												<input type="radio" name="archivo" value="xls" />
+												Excel
+											</TD>
+										</TR>
+										<TR>
+											<TD colspan="2" style="background-color: #f1f5fa">
+												&nbsp;
+											</TD>
+										</TR>
+										<TR>
+											<TD colspan="2" align="center">
+												<INPUT type="button" onclick="enviar()" class="sbttn" value="Aceptar">
+											</TD>
+										</TR>
+									</TABLE>
+								</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+		</form>
+	</BODY>
+</HTML>

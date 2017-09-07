@@ -1,0 +1,174 @@
+.l1      			{ color: #ff0; font-weight: bold; font-size: 3mm; font-family: Verdana; text-decoration: none }
+.l1 A:link   		 { color: #0c1967; text-decoration: none }
+.l1 A:visited  		 { color: #0c1967; text-decoration: none }
+.l1 A:hover    		{ color: #00c; text-decoration: underline }
+.l1 A:active   		{ color: #30f; text-decoration: underline }
+
+.menu1         { color: #0c1967; font-weight: normal; font-size: 11px; font-family: Arial; text-decoration: none }
+.menu1 a:link     { color: #0c1967; text-decoration: none }
+.menu1 a:visited      { color: #0c1967; text-decoration: none }
+.menu1 a:hover      { color: #00c; text-decoration: underline }
+.menu1 a:active      { color: #0c1967; text-decoration: none }
+
+.menu1b 			       { color: #0c1967; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+.menu1b a:link     { color: #0c1967; text-decoration: none }
+.menu1b a:visited      { color: #0c1967; text-decoration: none }
+.menu1b a:hover      { color: #00c; text-decoration: underline }
+.menu1b a:active      { color: #0c1967; text-decoration: none }
+
+.menu1c  { color: #0c1967; font-weight: bold; font-size: 14px; font-family: Arial; text-decoration: none }
+
+.menu2 			      { color: #002dbe; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+.menu2 a:link    { color: #002dbe; text-decoration: none }
+.menu2 a:visited     { color: #002dbe; text-decoration: none }
+.menu2 a:hover    { color: #002dbe; text-decoration: underline }
+.menu2 a:active    { color: #002dbe; text-decoration: none }
+
+.menu2b 			    { color: #009; font-weight: bold; font-size: 3mm; font-family: Verdana; text-decoration: none; border-top: 1px solid silver; border-bottom: 1px solid silver }
+
+.titulo1			{ color: black; font-weight: bold; font-size: 14px; font-family: Arial; text-decoration: none }
+.titulo1 A:link		 { color: #0c1967; text-decoration: none }
+.titulo1 A:visited	 { color: #0c1967; text-decoration: none }
+.titulo1 A:hover	{ color: #00c; text-decoration: underline }
+.titulo1 A:active	{ color: #f00; text-decoration: underline }
+
+.titulo2        { color: #0c1967; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+
+.titulo3        { color: #0c1967; font-weight: bold; font-size: 14px; font-family: Arial; text-decoration: none }
+
+.titulo4 			      { color: black; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+
+.titulo5     { color: #0c1967; font-weight: bold; font-size: 12px; font-family: Arial; text-decoration: none; border-top: 1pt solid #009; border-bottom: 1pt solid #009 }
+
+.titulo6   { color: #0c1967; font-weight: bold; font-size: 12px; font-family: Arial; text-decoration: none; border-top: 1pt solid #03c }
+
+.head-fechahora  { color: #0c1967; font-weight: normal; font-size: 10px; font-family: Arial; text-decoration: none }
+.head-menu    { color: #0c1967; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+.head-menu a:link     { color: #0c1967; text-decoration: none }
+.head-menu a:visited      { color: #0c1967; text-decoration: none }
+.head-menu a:hover       { color: #999; text-decoration: none }
+.head-menu a:active     { color: #00f; text-decoration: none }
+
+.texto1 			        { color: #000; font-weight: normal; font-size: 11px; font-family: Arial; text-decoration: none }
+.texto1 A:link   	   { color: #66c; text-decoration: underline }
+.texto1 A:visited 	   { color: #66c; text-decoration: underline }
+.texto1 A:hover  	   { color: #33f; text-decoration: underline }
+.texto1 A:active 	 { color: #f00; text-decoration: underline }
+
+.texto2    { color: #000; font-weight: normal; font-size: 11px; font-family: Arial; text-decoration: none }
+
+.texto3   { color: #000; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+
+.texto4   { color: #000; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none; border-top: 1pt solid #03c; border-bottom: 1pt solid #03c }
+
+.control1 			           { color: #000; font-weight: bold; font-size: 11px; font-family: Verdana; text-decoration: none }
+
+.control1a 			          { color: black; font-weight: normal; font-size: 11px; font-family: Arial; text-decoration: none }
+
+.control1b 			             { color: white; font-weight: bold; font-size: 12px; font-family: Arial; text-decoration: none; background-color: #999 }
+
+.control1c			          { color: #666; font-weight: normal; font-size: 11px; font-family: Arial; text-decoration: none }
+
+.control1d 			            { color: #666666; font-weight: bold; font-size: 12px; font-family: Arial; text-decoration: none }
+
+.control1e   { color: #000; font-weight: bold; font-size: 12px; font-family: Arial; text-decoration: none; border-top: 1pt solid #000; border-bottom: 1pt solid #000 }
+
+.tablehead1 			     { color: white; font-weight: bold; font-size: 11px; line-height: 8pt; font-family: Arial; text-decoration: none }
+.tablehead1 A:link   	    { color: #fff; text-decoration: none }
+.tablehead1 A:visited 	   { color: white; text-decoration: none }
+.tablehead1 A:hover  	     { color: #ff6; text-decoration: none }
+.tablehead1 A:active 	  { color: #fc0; text-decoration: none }
+
+.pestania1 			{ color: #fff; font-weight: bold; font-size: 11px; line-height: 8pt; font-family: Arial; text-decoration: none }
+.pestania1 A:link   	    { color: #fff; text-decoration: none }
+.pestania1 A:visited 	   { color: #fff; text-decoration: none }
+.pestania1 A:hover  	     { color: #ff6; text-decoration: none }
+.pestania1 A:active 	   { color: #ff6; text-decoration: none }
+
+.pestania2 			    { color: #666; font-weight: bold; font-size: 11px; line-height: 3.5mm; font-family: Arial; text-decoration: none }
+.pestania2 A:link   	  { color: #666; text-decoration: none }
+.pestania2 A:visited 	  { color: #666; text-decoration: none }
+.pestania2 A:hover  	   { color: #333; text-decoration: none }
+.pestania2 A:active 	    { color: #000; text-decoration: none }
+
+.boton1 			      { color: white; font-size: 11px; font-family: Arial; text-decoration: none }
+.boton1 A:link   	   { color: white; text-decoration: none }
+.boton1 A:visited   	   { color: white; text-decoration: none }
+.boton1 A:hover  	   { color: #ff3; text-decoration: none }
+.boton1 A:active  	    { color: #fc0; text-decoration: none }
+
+.boton2a			         { color: #333; font-size: 11px; line-height: 3.5mm; font-family: Arial; text-decoration: none; background: url(ima/gbotfoot_left.JPG) no-repeat center top; text-align: center }
+
+.boton2b			        { color: #333; font-size: 2.5mm; line-height: 3.5mm; font-family: Helvetica; text-decoration: none; background: url(ima/gbotfoot_right.JPG) no-repeat center top; text-align: center }
+
+.boton2c			        { color: #333; font-size: 2.5mm; line-height: 3.5mm; font-family: Helvetica; text-decoration: none; background: url(ima/gbotfoot_cancelar.JPG) no-repeat center top; text-align: center }
+
+.boton3 			         { color: #333; font-weight: normal; font-size: 2.5mm; line-height: 3.5mm; font-family: Helvetica; text-decoration: none; text-align: center }
+
+.boton4  { color: #ccc; font-size: 2.5mm; font-family: Verdana; text-decoration: none; text-align: center }
+.boton4 A:link  { color: #333; text-decoration: none }
+.boton4 A:visited  { color: #333; text-decoration: none }
+.boton4 A:hover  { color: #33f; text-decoration: none }
+.boton4 A:active  { color: #f00; text-decoration: none }
+
+.lista1 	        { color: #000; font-size: 11px; font-family: Arial; text-decoration: none }
+.lista1 a:link     { color: #00c; text-decoration: none }
+.lista1 a:visited      { color: #0c1967; text-decoration: none }
+.lista1 a:hover    { color: #002dbe; text-decoration: underline }
+.lista1 a:active    { color: #002dbe; text-decoration: none }
+
+.lista1b 			        { color: black; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+.lista1b A:link   	      { color: #0c1967; text-decoration: underline }
+.lista1b A:visited 	    { color: #000; text-decoration: underline }
+.lista1b A:hover  	      { color: #00f; text-decoration: underline }
+.lista1b A:active 	   { color: #f00; text-decoration: underline }
+
+.lista2 			        { color: #333; font-size: 11px; font-family: Arial; text-decoration: none; background-color: #f3f3f3 }
+.lista2 A:link   	      { color: #0c1967; text-decoration: underline }
+.lista2 A:visited 	    { color: #000; text-decoration: underline }
+.lista2 A:hover  	      { color: #00f; text-decoration: underline }
+.lista2 A:active 	   { color: #f00; text-decoration: underline }
+
+.lista3 			         { color: #000; font-size: 11px; font-family: Arial; text-decoration: none; background-color: #f3f3f3; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc }
+.lista3 a:link     { color: #00c; text-decoration: none }
+.lista3 a:visited      { color: #0c1967; text-decoration: none }
+.lista3 a:hover    { color: #002dbe; text-decoration: underline }
+.lista3 a:active    { color: #002dbe; text-decoration: none }
+
+.lista3b 			          { color: #333; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none; background-color: #f3f3f3; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc }
+.lista3b A:link   	      { color: #0c1967; text-decoration: underline }
+.lista3b A:visited 	    { color: #000; text-decoration: underline }
+.lista3b A:hover  	      { color: #00f; text-decoration: underline }
+.lista3b A:active 	   { color: #f00; text-decoration: underline }
+
+.lista4 			        { color: black; font-size: 11mm; font-family: Arial; text-decoration: none; border-bottom: 1px solid #ccc }
+.lista4 A:link   	      { color: #0c1967; text-decoration: underline }
+.lista4 A:visited 	    { color: #000; text-decoration: underline }
+.lista4 A:hover  	      { color: #00f; text-decoration: underline }
+.lista4 A:active 	   { color: #f00; text-decoration: underline }
+
+.lista5 			       { color: #999; font-size: 3mm; font-family: Verdana; text-decoration: none; background-color: #f0f0f0; border-top: 1px solid #fff; border-right: #999; border-bottom: 1px solid #fff; border-left: #999 }
+
+.ayuda1 			        { color: #000; font-weight: bold; font-size: 13px; font-family: Arial; text-decoration: none }
+.ayuda1 A:link   	    { color: black }
+.ayuda1 A:visited 	   { color: #666; text-decoration: none }
+.ayuda1 A:hover  	 { color: #00c; text-decoration: underline }
+.ayuda1 A:active 	 { color: #f00; text-decoration: underline }
+
+.ayuda2 			        { color: #000; font-weight: bold; font-size: 12px; font-family: Arial; text-decoration: none }
+.ayuda2 A:link   	    { color: #000; text-decoration: none }
+.ayuda2 A:visited 	 { color: #666; text-decoration: none }
+.ayuda2 A:hover  	 { color: #00c; text-decoration: underline }
+.ayuda2 A:active 	 { color: #f00; text-decoration: underline }
+
+.ayuda3 			        { color: #000; font-weight: bold; font-size: 11px; font-family: Arial; text-decoration: none }
+.ayuda3 A:link   	    { color: #000; text-decoration: none }
+.ayuda3 A:visited 	 { color: #666; text-decoration: none }
+.ayuda3 A:hover  	 { color: #00c; text-decoration: underline }
+.ayuda3 A:active 	 { color: #f00; text-decoration: underline }
+
+.ayuda4 			       { color: black; font-weight: normal; font-size: 11px; font-family: Arial; text-decoration: none }
+.ayuda4 A:link   	    { color: black; text-decoration: none }
+.ayuda4 A:visited 	  { color: #666; text-decoration: none }
+.ayuda4 A:hover  	 { color: #00c; text-decoration: underline }
+.ayuda4 A:active 	 { color: #f00; text-decoration: underline }
