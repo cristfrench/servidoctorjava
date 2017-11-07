@@ -5,23 +5,17 @@
 
 <%!MessageResources res = MessageResources.getMessageResources( "com.servidoctor.resources.ApplicationResources" );%>
 <SCRIPT>
-
-function enviar()
-{
-
-	if(document.forms[0].segm_nomcia.value=='' || document.forms[0].segm_nomcia.value=='0'){
-         alert('<bean:message key="6111" />');
-         document.forms[0].segm_nomcia.focus();
-         return false;
-	}if(document.forms[0].segm_polizaafi.value==''){
-         alert('<bean:message key="6112" />');
-         document.forms[0].segm_polizaafi.focus();
-         return false;
-	}if(document.forms[0].segm_contacto.value=='' || document.forms[0].segm_contacto.value=='0'){
-         alert('<bean:message key="6113" />');
+function comprobacion() {
+	if(document.forms[0].segm_contacto.value=='' || document.forms[0].segm_contacto.value=='0' || document.forms[0].segm_polizaafi.value=='' || document.forms[0].segm_polizaafi.value=='0' || document.forms[0].segm_nomcia.value=='' || document.forms[0].segm_nomcia.value=='0'){
+         alert('all fields must be full.');
          document.forms[0].segm_contacto.focus();
          return false;
+	} else {
+		return true;
 	}
+}
+function enviar() {
+	if(comprobacion() === true ) {
 	convertirACampo('cDia1', 'cMes1', 'cAno1', 'segm_vig_desde');
 	convertirACampo('cDia2', 'cMes2', 'cAno2', 'segm_vig_hasta');
 	document.forms[0].action="<%=request.getContextPath()%>/DatosPer/Popup/transferir_seguro.do"
@@ -29,7 +23,9 @@ function enviar()
 	top.close();
 	actualiza_popup_abierto();
 	document.forms[0].submit();
-
+	} else {
+		alert("Verify all fields in the form.");
+	}
 }
 
 </SCRIPT>
@@ -272,13 +268,6 @@ function enviar()
 			</td>
 		</tr>
 	</table>
-	<script
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
-	<script>
-		jQuery("input[type=text]").attr("required");
-	</script>
 </html:form>
 
 
