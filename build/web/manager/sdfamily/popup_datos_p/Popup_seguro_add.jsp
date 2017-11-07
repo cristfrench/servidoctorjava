@@ -85,7 +85,7 @@ function enviar()
 																:&nbsp;
 															</TD>
 															<TD class="view_item">
-																<html:text property="segm_nomcia" maxlength="40" size="40" styleClass="sel" />
+																<html:text property="segm_nomcia" maxlength="40" size="40" required styleClass="sel" />
 															</TD>
 														</tr>
 														<tr>
@@ -94,7 +94,7 @@ function enviar()
 																:&nbsp;
 															</TD>
 															<TD class="view_item">
-																<html:text property="segm_polizaafi" maxlength="40" size="40" styleClass="sel" />
+																<html:text property="segm_polizaafi" maxlength="40" size="40" required styleClass="sel" />
 															</TD>
 														</tr>
 														<tr>
@@ -103,7 +103,7 @@ function enviar()
 																:&nbsp;
 															</TD>
 															<TD class="view_item">
-																<html:text property="segm_contacto" maxlength="60" size="40" styleClass="sel" />
+																<html:text property="segm_contacto" maxlength="60" size="40" styleClass="sel" required />
 															</TD>
 														</tr>
 														<table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -223,7 +223,7 @@ function enviar()
 																:&nbsp;
 															</TD>
 															<TD class="view_item">
-																<html:text property="segm_email" maxlength="30" size="50" styleClass="sel" />
+																<html:text property="segm_email" maxlength="30" size="50" styleClass="sel" required />
 															</TD>
 														</tr>
 														<tr>
