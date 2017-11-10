@@ -27,7 +27,6 @@ function enviar() {
 		alert('<bean:message key="11134" />');
 	}
 }
-
 </SCRIPT>
 
 <html:form target="_self" action="/DatosPer/Popup/add_seguro.do">
@@ -278,7 +277,3 @@ function enviar() {
 		</tr>
 	</table>
 </html:form>
-
-
-
-

@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Z:/Proyectos_2017/colombia/ServiDoctor/manager/sdfamily/AspectosGenerales.jsp</file>
+            <file>file:/Z:/Proyectos_2017/colombia/ServiDoctor2/build/web/WEB-INF/classes/com/servidoctor/resources/ApplicationResources_en.properties</file>
+            <file>file:/Z:/Proyectos_2017/colombia/ServiDoctor2/build/web/src/com/servidoctor/sdfamily/dao/GrupoUsuarioSegmentacionDAO.java</file>
+            <file>file:/Z:/Proyectos_2017/colombia/ServiDoctor2/build/web/manager/sdfamily/HistoriaMedica.jsp</file>
+            <file>file:/Z:/Proyectos_2017/colombia/ServiDoctor2/build/web/src/com/servidoctor/sdfamily/dao/DatosPersonalesDAO.java</file>
+            <file>file:/Z:/Proyectos_2017/colombia/ServiDoctor2/build/web/src/com/servidoctor/sdfamily/dao/LogoCompradorDAO.java</file>
+            <file>jar:file:/Z:/Proyectos_2017/colombia/ServiDoctor/WEB-INF/classes/com/servidoctor/classes.src.zip!/com/servidoctor/sdfamily/dao/DatosPersonalesCompletoDAO.java</file>
+            <file>file:/Z:/Proyectos_2017/colombia/ServiDoctor/manager/sdfamily/DatosPersonales.jsp</file>
+        </group>
     </open-files>
 </project-private>
