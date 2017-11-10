@@ -7,7 +7,7 @@
 <SCRIPT>
 function comprobacion() {
 	if(document.forms[0].segm_contacto.value=='' || document.forms[0].segm_contacto.value=='0' || document.forms[0].segm_polizaafi.value=='' || document.forms[0].segm_polizaafi.value=='0' || document.forms[0].segm_nomcia.value=='' || document.forms[0].segm_nomcia.value=='0'){
-         alert('all fields must be full.');
+         alert('<bean:message key="11135" />');
          document.forms[0].segm_contacto.focus();
          return false;
 	} else {
@@ -24,7 +24,7 @@ function enviar() {
 	actualiza_popup_abierto();
 	document.forms[0].submit();
 	} else {
-		alert("Verify all fields in the form.");
+		alert('<bean:message key="11134" />');
 	}
 }
 
@@ -73,6 +73,15 @@ function enviar() {
 														<tr>
 															<TD colspan="2">
 																&nbsp;
+															</TD>
+														</tr>
+														<tr>
+															<TD class="view_item">
+																<bean:message key="11136" />
+																:&nbsp;
+															</TD>
+															<TD class="view_item">
+																<html:text property="segm_type" maxlength="40" size="40" styleClass="sel" />
 															</TD>
 														</tr>
 														<tr>

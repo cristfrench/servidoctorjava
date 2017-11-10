@@ -900,6 +900,11 @@ function obtenerCamposFechaModified(namedia, namemes, nameano, campoFinal) {
 														</tr>
 														<tr>
 															<td class="tdNameOption" style="border: 1px solid #D98200" rowspan="3" align="center">
+																	&nbsp;
+																	<bean:message key="11136" />
+																	&nbsp;
+															</td>
+															<td class="tdNameOption" style="border: 1px solid #D98200" rowspan="3" align="center">
 																&nbsp;
 																<bean:message key="global.numeral" />
 																&nbsp;
@@ -951,6 +956,10 @@ function obtenerCamposFechaModified(namedia, namemes, nameano, campoFinal) {
 														<logic:iterate indexId="indx" id="seguro" name="SEGUROS" type="com.servidoctor.sdfamily.model.SeguroMedico">
 															<tr>
 																<TD class="view_desc" align="center"><%=x + 1%></TD>
+																<td class="view_item" align="left">
+																	<bean:write name="tipo" property="segm_type" scope="page" />
+																	&nbsp;&nbsp;
+																</td>
 																<td class="view_item" align="left">
 																	<bean:write name="seguro" property="segm_nomcia" scope="page" />
 																	&nbsp;&nbsp;
